@@ -1,0 +1,5 @@
+- hosts: all
+  become: yes
+  tasks:
+    - yum: name=chrony state=present
+    - systemd: state=started name=chronyd enabled=yes

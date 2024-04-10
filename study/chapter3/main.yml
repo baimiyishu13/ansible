@@ -1,0 +1,9 @@
+---
+- name: install
+  hosts: app
+  become: true
+
+  tasks:
+    
+    - debug: msg="message variable is {{ ansible_os_family }}"
+

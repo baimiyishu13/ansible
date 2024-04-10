@@ -1,0 +1,15 @@
+[app]
+centos1
+centos2
+
+[db]
+centos3
+
+[multi:children]
+app
+db
+
+# 服务器变量
+[multi:vars]
+ansible_ssh_user=root
+
